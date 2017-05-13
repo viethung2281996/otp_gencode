@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active OTP"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp" />
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Bank account"
+        android:layout_above="@+id/et_password"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/et_seed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_active"
+        android:layout_alignLeft="@+id/et_account"
+        android:layout_alignStart="@+id/et_account"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Seed code" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_above="@+id/et_seed"
+        android:layout_alignLeft="@+id/et_seed"
+        android:layout_alignStart="@+id/et_seed" />
+</RelativeLayout>
